@@ -6,9 +6,9 @@ const Bubble = () => {
       <div className="chat chat-end">
         <div className="chat-bubble chat-bubble-secondary font-thin">
           <a
-            href="https://github.com/DaroMacs/frontend_challenge/tree/dariomacedo"
-            target="_blank"
+            href="https://github.com/DaroMacs?tab=repositories"
             rel="noreferrer"
+            target="_blank"
           >
             dev. darío :)
           </a>

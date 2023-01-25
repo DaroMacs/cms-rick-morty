@@ -1,58 +1,93 @@
-# Comentarios Darío - Prueba Técnica
+## Getting Started 🚀
 
-Comparto un video demo de la prueba técnica que muestra los features de manera general.
+Set up your local development environment by following these steps:
 
-Cualquier duda quedo a la orden.
+1.  **Install packages.**
 
-https://www.loom.com/share/66f1e606d83c44bf99316f5b34cc65bf
+```bash
+npm install
+# or
+yarn install
+```
 
+2.  **Start the development server.**
 
+```bash
+npm run start
+# or
+yarn start
+```
 
-# Prueba técnica Frontend
+The live development website should now appear at [http://localhost:3000](http://localhost:3000).
 
-## PARTE UNO
+## Available Scripts
 
-La primera parte de esta prueba, consiste en replicar los formularios de inicio de sesión y registro que se muestran debajo respectivamente:
+In the project directory, you can run:
 
-![LoginForm](/src/assets/Login.png "Login Form")
-![SignupForm](/src/assets/Signup.png "Signup Form")
+### `yarn start`
 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Las condiciones del formulario son:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- Que se pueda navegar entre vistas al dar click en inicio de sesión o registro.
-- Que la contraseña tenga mínimo 8 caracteres incluyendo números, mayúsculas y minúsculas y caracteres especiales. En caso de no cumplir con esas características, se tiene que generar un alert, modal o texto en rojo indicando al usuario.
-- Si las contraseñas no coinciden en le registro, se tiene que generar un alert, modal o el texto en rojo indicando al usuario.
-- Que no permita dar clic en el botón de registro si el usuario no ha aceptado los términos y condiciones.
+### `yarn test`
 
-## Se va a evaluar:
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- La parte creativa en cuanto a íconos, imágenes, animaciones.
-- Que sea responsive
-- Cumplimitento de las condiciones del formulario.
-- Buenas prácticas en el código.
+### `yarn build`
 
-## PARTE DOS
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-La segunda parte de la prueba es construir una landing page basada en esle template y consumir la API de Rick and Morty (https://rickandmortyapi.com/) para mostrar de forma aleatoria 8 personajes.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-![Landing](/src/assets/Landing.png "Landing Page")
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Al dar click sobre alguno de los personajes, se abrirá un detalle con información desde la API.
-(Imagen de personaje, nombre, estatus, especie y origen)
+### `yarn eject`
 
-![LandingDetail](/src/assets/LandingDetail.png "Landing Detail")
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Se evaluará:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- El estilo y creatividad en paleta de colores, imágenes, íconos, animaciones.
-- Buenas prácticas en el código
-- Que sea responsive
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Para ambas partes de la prueba, pueden utilizarse librerías de estilos.
+## Learn More
 
-Crea una branch y sube tu challenge, tienes un plazo de 5 días máximo.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Para correr el proyecto: yarn start 
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+---
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # cms-rick-morty
