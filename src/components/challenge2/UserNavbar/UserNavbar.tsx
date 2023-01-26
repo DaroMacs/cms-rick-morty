@@ -2,7 +2,11 @@ import React from "react";
 import logoRick from "../../../assets/logoRick.png";
 import { BiUser } from "react-icons/bi";
 
-const UserNavbar = ({ open }) => {
+interface IUserNavbar {
+  open: boolean;
+}
+
+const UserNavbar = ({ open }: IUserNavbar) => {
   return (
     <div className="mx-3">
       <div

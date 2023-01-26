@@ -1,7 +1,7 @@
 import React from "react";
 import rick from "../../../assets/rick.png";
 import { motion } from "framer-motion";
-import { logoAnimation } from "../../../components/variants/variants";
+import { logoAnimation } from "../../variants/variants";
 
 export const stylingObject = {
   title: {

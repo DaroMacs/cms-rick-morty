@@ -19,7 +19,7 @@ const RegisterForm = () => {
     setIsTCAccepted(!isTCAccepted);
   };
 
-  const passwordValid = (isValid) => {
+  const passwordValid = (isValid: boolean) => {
     if (isValid) {
       setIsPasswordValid(true);
     } else {
@@ -103,7 +103,7 @@ const RegisterForm = () => {
                   aria-describedby="showPassword"
                   type="checkbox"
                   className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                  required=""
+                  required={false}
                   onChange={togglePassword}
                 />
               </div>
@@ -152,7 +152,7 @@ const RegisterForm = () => {
                   aria-describedby="termsConditions"
                   type="checkbox"
                   className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                  required=""
+                  required={false}
                   onChange={termsConditionsAccepted}
                 />
               </div>

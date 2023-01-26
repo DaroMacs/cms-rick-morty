@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Card = ({ character, getCharacter }) => {
+interface ICard {
+  character: any;
+  getCharacter: any;
+}
+
+const Card = ({ character, getCharacter }: ICard) => {
   const { image, name } = character;
 
   return (

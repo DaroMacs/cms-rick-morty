@@ -1,12 +1,16 @@
 import React from "react";
 
+interface ICardModal {
+  characterModal: any;
+}
+
 const stylesObject = {
   background: {
     backgroundImage: "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)"
   }
 };
 
-const CardModal = ({ characterModal }) => {
+const CardModal = ({ characterModal }: ICardModal) => {
   return (
     <>
       <input type="checkbox" id="modalCharacter" className=" modal-toggle" />

@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from "react";
 import CharacterContext from "./CharacterContext";
 
-const CharacterProvider = ({ children }) => {
+interface ICharacterProvider {
+  children: React.ReactNode;
+}
+
+const CharacterProvider = ({ children }: ICharacterProvider) => {
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [characterModal, setCharacterModal] = useState({});
 
-  const getCharacter = (e) => {
+  const getCharacter = (e: any) => {
     const viewId = Number(e.currentTarget.id);
-    const characterFiltered = characters.filter((char) => char.id === viewId);
+    const characterFiltered = characters.filter(
+      (char: any) => char.id === viewId
+    );
     setCharacterModal(characterFiltered[0]);
   };
 

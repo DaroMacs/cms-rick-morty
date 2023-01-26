@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import { stylingObject } from "../Hero/Hero";
 import SocialNetworksBar from "./SocialNetworksBar";
 
-const Sidebar = ({ open, setOpen }) => {
+interface ISidebar {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Sidebar = ({ open, setOpen }: ISidebar) => {
   return (
     <div className="flex z-50 ">
       <div
