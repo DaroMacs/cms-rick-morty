@@ -1,11 +1,12 @@
 import { createContext } from "react";
+import { ICharacter } from "./CharacterProvider";
 
 interface ICreateContext {
-  characters: any;
-  fetchCharacters: any;
+  characters: ICharacter[];
+  fetchCharacters: () => Promise<void>;
   isLoading: boolean;
-  characterModal: any;
-  getCharacter: any;
+  characterModal: ICharacter;
+  getCharacter: (e: React.MouseEvent<HTMLLabelElement, MouseEvent>) => void;
 }
 
 const CharacterContext = createContext({} as ICreateContext);

@@ -5,15 +5,32 @@ interface ICharacterProvider {
   children: React.ReactNode;
 }
 
-const CharacterProvider = ({ children }: ICharacterProvider) => {
-  const [characters, setCharacters] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [characterModal, setCharacterModal] = useState({});
+export interface ICharacter {
+  id: number;
+  name: string;
+  status: string;
+  species: string;
+  type: string;
+  gender: string;
+  origin: { name: string; url: string };
+  location: { name: string; url: string };
+  image: string;
+  episode: string[];
+  url: string;
+  created: string;
+}
 
-  const getCharacter = (e: any) => {
+const CharacterProvider = ({ children }: ICharacterProvider) => {
+  const [characters, setCharacters] = useState<ICharacter[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [characterModal, setCharacterModal] = useState({} as ICharacter);
+
+  console.log(characters);
+
+  const getCharacter = (e: React.MouseEvent<HTMLLabelElement, MouseEvent>) => {
     const viewId = Number(e.currentTarget.id);
     const characterFiltered = characters.filter(
-      (char: any) => char.id === viewId
+      (char: ICharacter) => char.id === viewId
     );
     setCharacterModal(characterFiltered[0]);
   };

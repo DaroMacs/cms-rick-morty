@@ -1,7 +1,8 @@
 import React from "react";
+import { ICharacter } from "../../context/CharactersContext/CharacterProvider";
 
 interface ICardModal {
-  characterModal: any;
+  characterModal: ICharacter;
 }
 
 const stylesObject = {

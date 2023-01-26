@@ -4,6 +4,7 @@ import { stylingObject } from "../Hero/Hero";
 import Card from "./Card";
 import { InfinitySpin } from "react-loader-spinner";
 import CardModal from "./CardModal";
+import { ICharacter } from "../context/CharactersContext/CharacterProvider";
 
 const CardsContainer = () => {
   const {
@@ -44,7 +45,7 @@ const CardsContainer = () => {
           </div>
         ) : (
           <div className="flex items-center flex-col md:grid grid-cols-1 gap-6 mb-20 lg:grid-cols-4">
-            {characters.map((character: any) => {
+            {characters.map((character: ICharacter) => {
               return (
                 <Card
                   key={character.id}

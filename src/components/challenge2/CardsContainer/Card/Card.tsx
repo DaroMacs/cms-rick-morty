@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { ICharacter } from "../../context/CharactersContext/CharacterProvider";
 
 interface ICard {
-  character: any;
-  getCharacter: any;
+  character: ICharacter;
+  getCharacter: (e: React.MouseEvent<HTMLLabelElement, MouseEvent>) => void;
 }
 
 const Card = ({ character, getCharacter }: ICard) => {
@@ -21,8 +22,8 @@ const Card = ({ character, getCharacter }: ICard) => {
         <h2 className="card-title font-bold h-10 text-sm ">{name}</h2>
         <div className="card-actions justify-end">
           <label
-            id={character.id}
-            onClick={(e) => getCharacter(e)}
+            id={character.id.toString()}
+            onClick={getCharacter}
             htmlFor="modalCharacter"
             className="btn btn-xs btn-primary"
           >
