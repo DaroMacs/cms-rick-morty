@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/react.png";
+import logo from "../../../assets/logoRick.png";
 
 const stylesObject = {
   background: {
@@ -63,15 +63,11 @@ const Navbar = () => {
         >
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-gray-300 font-thin">
             <Link to={"/"}>
-              <li className="btn btn-ghost normal-case text-sm">Inicio</li>
+              <li className="btn btn-ghost normal-case text-sm">Home</li>
             </Link>
-            <li className="btn btn-ghost normal-case text-sm">
-              Acerca de Nosotros
-            </li>
-            <li className="btn btn-ghost normal-case text-sm">
-              ¿Cómo Funciona?
-            </li>
-            <li className="btn btn-ghost normal-case text-sm">Contáctanos</li>
+            <li className="btn btn-ghost normal-case text-sm">About Us</li>
+            <li className="btn btn-ghost normal-case text-sm">How it works</li>
+            <li className="btn btn-ghost normal-case text-sm">Contact Us</li>
           </ul>
         </div>
       </div>

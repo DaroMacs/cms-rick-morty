@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/react.png";
+import logo from "../../../assets/rick.png";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import PasswordChecklist from "react-password-checklist";
@@ -32,10 +32,10 @@ const RegisterForm = () => {
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <div className="flex justify-center">
-            <img className="w-16 h-16 mr-2" src={logo} alt="logo" />
+            <img className="w-32 mr-2" src={logo} alt="logo" />
           </div>
           <h1 className="text-xl text-center font-bold  text-gray-900 md:text-2xl dark:text-white">
-            Ingresa tus datos
+            Add your information
           </h1>
           <form className="space-y-4 md:space-y-6" action="#">
             <div>
@@ -50,7 +50,7 @@ const RegisterForm = () => {
                 name="email"
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full py-2 px-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="mail@dominio.com"
+                placeholder="mail@domain.com"
                 required={true}
               />
             </div>
@@ -59,14 +59,14 @@ const RegisterForm = () => {
                 htmlFor="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Contraseña
+                Password
               </label>
               <div className="flex items-center gap-2">
                 <input
                   type={!showPassword ? "password" : "text"}
                   name="password"
                   id="password"
-                  placeholder="Contraseña"
+                  placeholder="Password"
                   autoComplete="off"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full py-2 px-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   required={true}
@@ -80,14 +80,14 @@ const RegisterForm = () => {
                 htmlFor="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Confirmar Contraseña
+                Confirm Password
               </label>
               <div className="flex  items-center gap-2">
                 <input
                   type={!showPassword ? "password" : "text"}
                   name="passwordAgain"
                   id="passwordAgain"
-                  placeholder="Confirmar Contraseña"
+                  placeholder="Confirm Password"
                   autoComplete="off"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full py-2 px-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   required={true}
@@ -116,7 +116,7 @@ const RegisterForm = () => {
                   htmlFor="showPassword"
                   className="text-gray-700 dark:text-gray-300"
                 >
-                  Mostrar Contraseñas
+                  Show Passwords
                 </label>
               </div>
             </div>
@@ -135,13 +135,6 @@ const RegisterForm = () => {
                 onChange={(isValid) => {
                   passwordValid(isValid);
                 }}
-                messages={{
-                  minLength: "La contraseña debe ser mínimo de 8 caracteres.",
-                  specialChar: "La contraseña tiene caracteres especiales.",
-                  number: "La contraseña tiene un número.",
-                  capital: "La contraseña tiene una letra mayúscula.",
-                  match: "Las contraseñas coinciden."
-                }}
               />
             )}
 
@@ -158,21 +151,13 @@ const RegisterForm = () => {
               </div>
               <div className="ml-3 text-sm">
                 <label htmlFor="termsConditions" className="text-gray-700">
-                  Acepto y he leído los{" "}
+                  I accept{" "}
                   <a
                     href="/"
                     target="_blank"
                     className="underline text-blue-500"
                   >
-                    Términos y condiciones
-                  </a>{" "}
-                  y la{" "}
-                  <a
-                    href="/"
-                    target="_blank"
-                    className="underline text-blue-500"
-                  >
-                    Política de privacidad
+                    Terms & Conditions
                   </a>
                 </label>
               </div>
@@ -184,7 +169,7 @@ const RegisterForm = () => {
                 isTCAccepted && isPasswordValid ? "" : "btn-disabled"
               }`}
             >
-              Crear Cuenta
+              Create Account
             </button>
           </form>
 
@@ -192,11 +177,11 @@ const RegisterForm = () => {
 
           <div className="flex flex-col ">
             <p className="text-sm font-light text-zinc-800 pb-3 text-center">
-              ¿Ya tienes cuenta con nosotros?
+              Have you got already an account?
             </p>
-            <Link to={"/challenge1"}>
+            <Link to={"/"}>
               <button className="btn btn-sm btn-info w-full text-white">
-                Inicia Sesión
+                Login
               </button>
             </Link>
           </div>

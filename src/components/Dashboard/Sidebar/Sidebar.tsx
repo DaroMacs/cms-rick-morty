@@ -62,7 +62,7 @@ const Sidebar = ({ open, setOpen }: ISidebar) => {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                     />
                   </svg>
-                  <span className="text-gray-100 pl-2">Inicio</span>
+                  <span className="text-gray-100 pl-2">Home</span>
                 </li>
               </Link>
               <Link
@@ -108,7 +108,7 @@ const Sidebar = ({ open, setOpen }: ISidebar) => {
                       d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                     />
                   </svg>
-                  <span className="text-gray-100 pl-2">Órdenes</span>
+                  <span className="text-gray-100 pl-2">Orders</span>
                 </li>
               </Link>
               <Link
@@ -136,7 +136,7 @@ const Sidebar = ({ open, setOpen }: ISidebar) => {
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span className="text-gray-100 pl-2">Ajustes</span>
+                  <span className="text-gray-100 pl-2">Settings</span>
                 </li>
               </Link>
             </ul>

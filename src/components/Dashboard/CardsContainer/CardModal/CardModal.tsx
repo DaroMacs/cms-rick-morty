@@ -45,15 +45,15 @@ const CardModal = ({ characterModal }: ICardModal) => {
               <h2 className="card-title">{characterModal?.name}</h2>
               <div className="mt-5 space-y-1">
                 <p>
-                  <span className="font-bold">Estatus: </span>
+                  <span className="font-bold">Status: </span>
                   {characterModal?.status}
                 </p>
                 <p>
-                  <span className="font-bold">Especie: </span>
+                  <span className="font-bold">Species: </span>
                   {characterModal?.species}
                 </p>
                 <p>
-                  <span className="font-bold">Origen: </span>
+                  <span className="font-bold">Origin: </span>
                   {characterModal?.origin?.name}
                 </p>
               </div>

@@ -24,7 +24,7 @@ const CardsContainer = () => {
             className="text-xl font-bold pb-2 md:pb-0"
             style={stylingObject.title}
           >
-            Personajes
+            Characters
           </h1>
           <div className="flex justify-center items-center">
             <button
@@ -34,7 +34,7 @@ const CardsContainer = () => {
               {isLoading ? (
                 <InfinitySpin color="#C4DC5C" width="50" />
               ) : (
-                <span>Generar Personajes</span>
+                <span>Create New Characters</span>
               )}
             </button>
           </div>

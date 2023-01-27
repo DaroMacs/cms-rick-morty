@@ -27,7 +27,7 @@ const Card = ({ character, getCharacter }: ICard) => {
             htmlFor="modalCharacter"
             className="btn btn-xs btn-primary"
           >
-            Más Info
+            Details
           </label>
         </div>
       </div>

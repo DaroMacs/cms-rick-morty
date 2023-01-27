@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import CardsContainer from "../../components/challenge2/CardsContainer";
-import CharacterProvider from "../../components/challenge2/context/CharactersContext/CharacterProvider";
-import Hero from "../../components/challenge2/Hero";
-import UserNavbar from "../../components/challenge2/UserNavbar";
+import CardsContainer from "../../components/Dashboard/CardsContainer";
+import CharacterProvider from "../../components/Dashboard/context/CharactersContext/CharacterProvider";
+import Hero from "../../components/Dashboard/Hero";
+import UserNavbar from "../../components/Dashboard/UserNavbar";
 import Bubble from "../../components/general/Bubble";
-import Sidebar from "../../components/challenge2/Sidebar/Sidebar";
+import Sidebar from "../../components/Dashboard/Sidebar/Sidebar";
 
 const stylesObject = {
   background: {

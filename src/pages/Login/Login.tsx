@@ -1,8 +1,8 @@
 import React from "react";
-import LoginForm from "../../components/challenge1/LoginForm";
-import Navbar from "../../components/challenge1/Navbar";
+import LoginForm from "../../components/Login/LoginForm";
+import Navbar from "../../components/Login/Navbar";
 import { Routes, Route } from "react-router-dom";
-import RegisterForm from "../../components/challenge1/RegisterForm/RegisterForm";
+import RegisterForm from "../../components/Login/RegisterForm/RegisterForm";
 import Bubble from "../../components/general/Bubble";
 
 const stylesObject = {
@@ -20,7 +20,7 @@ const Challenge1 = () => {
       <div className="py-8">
         <Routes>
           <Route path="/" element={<LoginForm />} />
-          <Route path="/registrar" element={<RegisterForm />} />
+          <Route path="/register" element={<RegisterForm />} />
         </Routes>
       </div>
       <Bubble />

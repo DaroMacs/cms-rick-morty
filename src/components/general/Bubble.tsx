@@ -10,7 +10,7 @@ const Bubble = () => {
             rel="noreferrer"
             target="_blank"
           >
-            dev. darío :)
+            dev. dario :)
           </a>
         </div>
       </div>
